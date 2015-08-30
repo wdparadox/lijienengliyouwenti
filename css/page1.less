@@ -1,0 +1,144 @@
+html{
+    font-size: 75px;
+}
+body,div,p,ul,li,p,span,img,a{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
+@html:75;
+.font(@num){
+    font-size: @num;
+    [data-dpr^="2"] &{
+        font-size: @num*2;
+    }
+    [data-dpr^="3"] &{
+        font-size: @num*3;
+    }
+}
+.line(@num){
+    line-height: @num;
+    [data-dpr^="2"] &{
+        line-height: @num*2;
+    }
+    [data-dpr^="3"] &{
+        line-height: @num*3;
+    }
+}
+.main{
+    width: 100%;
+    height: 200rem/@html;
+    background-color: #fff; 
+}
+.every{
+    margin-left:30rem/@html;
+    margin-right:20rem/@html;
+    margin-top: 21rem/@html;
+    position: relative;
+    height: 170rem/@html;
+    border-bottom: 2px solid #CCCCCC;
+}
+.store{
+    width: 160rem/@html;
+    height: 130rem/@html;
+    float: left;
+    display: block;
+}
+.font{
+    margin-left: 20rem/@html;
+    position: relative;
+    display: inline-block;
+    width: 73%;
+}
+.title{
+    color: #000000;
+    .font(14px);
+    .line(14px);
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    display: inline-block;
+    max-width: 420rem/@html;
+}
+.top{
+    display: inline-block;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.top img{
+    width: 22rem/@html;
+    height: 22rem/@html;
+    margin-left: 8rem/@html;
+}
+.mid{
+    margin-top:17rem/@html;
+    margin-bottom: 15rem/@html;
+    .font(12px); 
+    .line(12px);
+    color: #000000;
+    position: relative;
+}
+.mid img{
+    width: 128rem/@html;
+    height: 24rem/@html;
+}
+.mid p{
+    display: inline-block;
+    letter-spacing:1px;
+}
+.mid span{
+    margin-left: 1px;
+    letter-spacing:1px;
+}
+.mid i{
+    color: rgb(208, 208, 209);
+    .font(12px);
+}
+.star{
+    margin-right: -7rem/@html; 
+}
+.bottom{
+    color:#CCCCCC;
+    .font(12px);
+    .line(12px);
+}
+.bottom p{
+    display: inline-block;
+}
+.bottom img{
+    width: 25rem/@html;
+    height: 24rem/@html;
+    margin-right: 12rem/@html;
+}
+.distance{
+    margin-left: 15rem/@html;
+}
+.right{
+    float: right;
+    margin-top: 20rem/@html;
+    color: #F85800;
+    position: relative;
+}
+.right span{
+    .font(32px);
+}
+.right p{
+    .font(16px);
+}
+.choose{
+    position: fixed;
+    height: 100rem/@html;
+    width: 100rem/@html;
+    .font(48px);
+    text-align: center;
+    line-height: 100rem/@html;
+    background-color: rgb(197, 232, 254);
+    color: #fff;
+    float: right;
+    display: inline-block;
+    left: 80%;
+    top: 80%; 
+}

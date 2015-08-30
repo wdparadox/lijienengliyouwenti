@@ -1,0 +1,41 @@
+@html:75;
+.font(@num){
+    font-size: @num;
+    [data-dpr^="2"] &{
+        font-size: @num*2;
+    }
+    [data-dpr^="3"] &{
+        font-size: @num*3;
+    }
+}
+.an-main{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(251,246,235);
+    height: 340rem/@html;
+    border-bottom: 2px solid #CCCCCC;
+}
+.an-main img{
+    margin-top: 60rem/@html;
+    width: 120rem/@html;
+    height: 120rem/@html;
+}
+.an-main p{
+    color: #4A4A4A;
+    .font(20px);
+    margin-top: 40rem/@html;
+}
+.an-bottom ul{
+    list-style-type: disc;
+    color: #A5A5A5;
+    list-style-position:outside;
+    .font(12px);
+    margin-left: 30rem/@html;
+}
+.an-bottom li{
+    margin-top: 36rem/@html;
+    margin-left: 36rem/@html;
+}
+.an-bottom p{
+    margin-left: 30rem/@html;
+}

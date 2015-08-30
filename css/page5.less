@@ -1,0 +1,39 @@
+@html:75;
+.font(@num){
+    font-size: @num;
+    [data-dpr^="2"] &{
+        font-size: @num*2;
+    }
+    [data-dpr^="3"] &{
+        font-size: @num*3;
+    }
+}
+.page5-main{
+    text-align: center;
+    width: 100%;
+}
+.page5-main img{
+    margin-top: 170rem/@html;
+    width: 270rem/@html;
+    height: 270rem/@html;
+}
+.page5-main p{
+    color: #999999;
+    .font(25px);
+    margin-top: 50rem/@html;
+}
+.page5-btn{
+    margin: 0 auto;
+    width: 600rem/@html;
+    margin-top: 60rem/@html;
+}
+.btn{
+    width: 580rem/@html;
+    height: 86rem/@html;
+    background-color: #00AAEE;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 86rem/@html;
+    .font(24px);
+}
